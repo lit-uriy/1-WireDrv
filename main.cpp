@@ -50,7 +50,7 @@ void uart_put_temp(const uint8_t subzero, uint8_t cel, uint8_t cel_frac_bits) {
     //sprintf(buffer, "%d",(cel_frac_bits*DS18X20_FRACCONV));
     //j=4-strlen(buffer);
     //for (i=0;i<j;i++) pc.printf("0");
-    //pc.printf("%s °C [",buffer);
+    //pc.printf("%s Â°C [",buffer);
 //    pc.printf("  freak %d ::", (cel_frac_bits*DS18X20_FRACCONV));
     // "rounding"
     //pc.printf((subzero)?'-':'+');
@@ -59,7 +59,7 @@ void uart_put_temp(const uint8_t subzero, uint8_t cel, uint8_t cel_frac_bits) {
     temperature = temperature/10;
     pc.printf("%4.1f C]\n", temperature);
 
-    //pc.printf( "%d 0°C]\n",decicelsius);
+    //pc.printf( "%d 0Â°C]\n",decicelsius);
 
 }
 
